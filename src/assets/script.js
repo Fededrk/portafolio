@@ -5,10 +5,10 @@ const draw = (innerId, OuterId, progressEndValue) =>{
 let circularProgress = document.querySelector(innerId),
 progressValue = document.querySelector(OuterId);
 
-let progressStartValue = 0,
+const progressStartValue = 0,
 speed = 30;
 
-let progress = setInterval(() => {
+const progress = setInterval(() => {
 progressStartValue++;
 
 progressValue.textContent = `${progressStartValue}%`
