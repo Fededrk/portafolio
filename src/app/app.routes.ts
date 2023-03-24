@@ -1,8 +1,10 @@
 import { RouterModule, Routes } from '@angular/router';
 import { Component } from '@angular/core';
 
-import { LoginComponent } from './components/index.paginas';
-import { PortafolioComponent } from './components/portafolio/portafolio.component';
+import {
+  LoginComponent,
+  PortafolioComponent,
+} from './components/index.paginas';
 
 const app_routes: Routes = [
   { path: 'login', component: LoginComponent },

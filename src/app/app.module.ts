@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 //RUTAS
-import {app_routing} from "./app.routes"
+import { app_routing } from './app.routes';
+
+//Componentes
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,14 +19,10 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    PortafolioComponent
+    PortafolioComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    app_routing
-  ],
+  imports: [BrowserModule, AppRoutingModule, app_routing],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
